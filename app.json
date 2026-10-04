@@ -8,10 +8,20 @@
     "scheme": "eventplace",
     "userInterfaceStyle": "automatic",
 
+    "locales": {
+      "he": "./locales/he.json",
+      "ar": "./locales/ar.json"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.eventplace.app",
       "infoPlist": {
+        "CFBundleDevelopmentRegion": "he",
+        "CFBundleLocalizations": [
+          "he",
+          "ar"
+        ],
+        "CFBundleAllowMixedLocalizations": true,
         "NSCameraUsageDescription": "This app needs camera access to take profile photos.",
         "NSPhotoLibraryUsageDescription": "This app needs photo library access to select profile images."
       }
@@ -35,12 +45,21 @@
       "expo-secure-store",
       "expo-image",
       "expo-splash-screen",
-      "expo-status-bar"
+      "expo-status-bar",
+      [
+        "expo-localization",
+        {
+          "supportedLocales": ["he", "ar"],
+          "supportsRTL": true
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
     },
     "extra": {
+      "supportsRTL": true,
+      "forcesRTL": true,
       "eas": {
         "projectId": ""
       }

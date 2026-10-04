@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.lg,
     color: colors.text,
+    textAlign: 'right',
   },
   action: {
     fontFamily: fontFamily.medium,

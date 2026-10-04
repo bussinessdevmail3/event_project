@@ -56,9 +56,15 @@ export function DatePickerModal({
     return arr;
   }, [year, month]);
 
-  const dayLabels = isRTL
-    ? [t('calendar.sat'), t('calendar.fri'), t('calendar.thu'), t('calendar.wed'), t('calendar.tue'), t('calendar.mon'), t('calendar.sun')]
-    : [t('calendar.sun'), t('calendar.mon'), t('calendar.tue'), t('calendar.wed'), t('calendar.thu'), t('calendar.fri'), t('calendar.sat')];
+  const dayLabels = [
+    t('calendar.sun'),
+    t('calendar.mon'),
+    t('calendar.tue'),
+    t('calendar.wed'),
+    t('calendar.thu'),
+    t('calendar.fri'),
+    t('calendar.sat'),
+  ];
 
   const goPrevMonth = () => {
     const prev = new Date(year, month - 1, 1);
@@ -132,11 +138,11 @@ export function DatePickerModal({
         <View style={styles.calendarContainer}>
           <View style={styles.monthHeader}>
             <Pressable onPress={goPrevMonth} hitSlop={8} style={styles.navButton}>
-              {isRTL ? <ChevronRight size={24} color={colors.primary[500]} /> : <ChevronLeft size={24} color={colors.primary[500]} />}
+              <ChevronRight size={24} color={colors.primary[500]} />
             </Pressable>
             <Text style={styles.monthName}>{monthName}</Text>
             <Pressable onPress={goNextMonth} hitSlop={8} style={styles.navButton}>
-              {isRTL ? <ChevronLeft size={24} color={colors.primary[500]} /> : <ChevronRight size={24} color={colors.primary[500]} />}
+              <ChevronLeft size={24} color={colors.primary[500]} />
             </Pressable>
           </View>
 

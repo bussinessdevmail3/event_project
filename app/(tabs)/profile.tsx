@@ -383,17 +383,20 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.lg,
     color: colors.text,
+    textAlign: 'right',
   },
   profileEmail: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginTop: 2,
+    textAlign: 'right',
   },
   profilePhone: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   editButton: {
     width: 36,
@@ -433,6 +436,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.lg,
     color: colors.text,
     marginBottom: spacing.sm,
+    textAlign: 'right',
   },
   favoritesPreview: {
     flexDirection: 'row',
@@ -452,11 +456,13 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.medium,
     fontSize: fontSize.sm,
     color: colors.text,
+    textAlign: 'right',
   },
   noFavoritesText: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.textMuted,
+    textAlign: 'right',
   },
   menuSection: {
     marginHorizontal: spacing.md,
@@ -485,6 +491,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.medium,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
   },
   menuItemRight: {
     flexDirection: 'row',
@@ -567,6 +574,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xxl,
     color: colors.text,
+    textAlign: 'right',
   },
   modalHeaderRight: {
     flexDirection: 'row',
@@ -597,12 +605,14 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
   },
   favoriteItemType: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.xs,
     color: colors.textSecondary,
     marginTop: 2,
+    textAlign: 'right',
   },
   notificationItem: {
     paddingHorizontal: spacing.md,
@@ -617,11 +627,13 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
   },
   notificationBody: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginTop: 4,
+    textAlign: 'right',
   },
 });

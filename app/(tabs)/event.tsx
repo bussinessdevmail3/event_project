@@ -397,6 +397,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xxxl,
     color: colors.text,
+    textAlign: 'right',
   },
   eventCard: {
     margin: spacing.md,
@@ -423,12 +424,14 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xl,
     color: colors.text,
+    textAlign: 'right',
   },
   eventType: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginTop: 2,
+    textAlign: 'right',
   },
   eventDetails: {
     gap: spacing.sm,
@@ -446,6 +449,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
   },
   notesContainer: {
     marginTop: spacing.md,
@@ -455,11 +459,13 @@ const styles = StyleSheet.create({
     fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginBottom: spacing.xs,
+    textAlign: 'right',
   },
   notesText: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.text,
+    textAlign: 'right',
   },
   eventActions: {
     flexDirection: 'row',
@@ -488,6 +494,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.md,
     color: colors.text,
     marginBottom: spacing.md,
+    textAlign: 'right',
   },
   statusRow: {
     flexDirection: 'row',
@@ -528,6 +535,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xl,
     color: colors.text,
+    textAlign: 'right',
   },
   cancelText: {
     fontFamily: fontFamily.medium,
@@ -544,6 +552,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginBottom: spacing.xs,
+    textAlign: 'right',
   },
   optionChip: {
     paddingHorizontal: spacing.md,

@@ -116,6 +116,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xl,
     color: colors.text,
+    textAlign: 'right',
   },
   selectedContainer: {
     paddingHorizontal: spacing.md,
@@ -129,12 +130,14 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.xs,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   selectedValue: {
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.md,
     color: colors.primary[700],
     marginTop: 2,
+    textAlign: 'right',
   },
   content: {
     flex: 1,
@@ -161,6 +164,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.medium,
     fontSize: fontSize.md,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   allCitiesTextActive: {
     color: colors.primary[700],
@@ -174,6 +178,7 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginBottom: spacing.sm,
     paddingHorizontal: spacing.xs,
+    textAlign: 'right',
   },
   cityItem: {
     flexDirection: 'row',
@@ -195,6 +200,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.medium,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
   },
   cityNameActive: {
     color: colors.primary[700],

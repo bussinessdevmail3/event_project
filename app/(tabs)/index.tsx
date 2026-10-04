@@ -386,11 +386,13 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   userName: {
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xxl,
     color: colors.text,
+    textAlign: 'right',
   },
   avatarPlaceholder: {
     width: 44,
@@ -417,6 +419,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.lg,
     color: colors.text,
     marginBottom: spacing.md,
+    textAlign: 'right',
   },
   typeSelector: {
     flexDirection: 'row',
@@ -463,6 +466,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.textMuted,
+    textAlign: 'right',
   },
   searchFieldTextActive: {
     color: colors.primary[700],
@@ -520,12 +524,14 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.lg,
     color: colors.text,
+    textAlign: 'right',
   },
   eventDetails: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginTop: 2,
+    textAlign: 'right',
   },
   eventAction: {
     flexDirection: 'row',
@@ -566,12 +572,14 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.md,
     color: colors.primary[700],
+    textAlign: 'right',
   },
   createEventDesc: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.primary[600],
     marginTop: 2,
+    textAlign: 'right',
   },
   horizontalList: {
     paddingHorizontal: spacing.md,

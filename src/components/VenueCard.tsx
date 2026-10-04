@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.md,
     color: colors.text,
     marginBottom: 4,
+    textAlign: 'right',
   },
   locationRow: {
     flexDirection: 'row',
@@ -128,6 +129,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.xs,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   detailsRow: {
     flexDirection: 'row',
@@ -144,11 +146,13 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.xs,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   price: {
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.sm,
     color: colors.primary[600],
     marginTop: 6,
+    textAlign: 'right',
   },
 });

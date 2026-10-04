@@ -458,6 +458,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xxxl,
     color: colors.text,
+    textAlign: 'right',
   },
   locationRow: {
     flexDirection: 'row',
@@ -469,6 +470,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   ratingRow: {
     flexDirection: 'row',
@@ -488,11 +490,13 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.xs,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   priceValue: {
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xl,
     color: colors.primary[600],
+    textAlign: 'right',
   },
   section: {
     marginTop: spacing.xl,
@@ -502,12 +506,14 @@ const styles = StyleSheet.create({
     fontSize: fontSize.lg,
     color: colors.text,
     marginBottom: spacing.sm,
+    textAlign: 'right',
   },
   description: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.textSecondary,
     lineHeight: 24,
+    textAlign: 'right',
   },
   chipsRow: {
     flexDirection: 'row',
@@ -527,6 +533,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.medium,
     fontSize: fontSize.sm,
     color: colors.text,
+    textAlign: 'right',
   },
   durationCard: {
     flexDirection: 'row',
@@ -540,6 +547,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.md,
     color: colors.primary[700],
+    textAlign: 'right',
   },
   packageCard: {
     backgroundColor: colors.neutral[50],
@@ -557,6 +565,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
   },
   packagePrice: {
     fontFamily: fontFamily.bold,
@@ -568,6 +577,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginBottom: spacing.sm,
+    textAlign: 'right',
   },
   packageIncludes: {
     flexDirection: 'row',
@@ -583,6 +593,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.xs,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   reviewItem: {
     paddingVertical: spacing.md,
@@ -614,6 +625,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.sm,
     color: colors.text,
+    textAlign: 'right',
   },
   reviewComment: {
     fontFamily: fontFamily.regular,
@@ -621,11 +633,13 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginTop: spacing.xs,
     lineHeight: 20,
+    textAlign: 'right',
   },
   noReviews: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.textMuted,
+    textAlign: 'right',
   },
   socialRow: {
     flexDirection: 'row',

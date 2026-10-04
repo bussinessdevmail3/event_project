@@ -1,8 +1,13 @@
 import { useEffect, useState } from 'react';
+import { I18nManager } from 'react-native';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+
+// Enforce RTL globally before rendering any native layouts
+I18nManager.allowRTL(true);
+I18nManager.forceRTL(true);
 import {
   Rubik_400Regular,
   Rubik_500Medium,

@@ -244,6 +244,7 @@ export default function ExploreScreen() {
             onChangeText={setSearchQuery}
             placeholder={t('explore.searchPlaceholder')}
             placeholderTextColor={colors.textMuted}
+            textAlign="right"
           />
           {searchQuery.length > 0 && (
             <Pressable onPress={() => setSearchQuery('')} hitSlop={8}>
@@ -465,6 +466,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xxxl,
     color: colors.text,
+    textAlign: 'right',
   },
   criteriaBar: {
     marginHorizontal: spacing.md,
@@ -512,6 +514,8 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
+    writingDirection: 'rtl',
   },
   filterButton: {
     width: 48,
@@ -628,6 +632,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
   },
   clearText: {
     fontFamily: fontFamily.medium,
@@ -640,6 +645,7 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginTop: spacing.sm,
     marginBottom: spacing.xs,
+    textAlign: 'right',
   },
   resultsContainer: {
     flex: 1,
@@ -652,6 +658,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.sm,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   grid: {
     paddingHorizontal: spacing.md,

@@ -38,6 +38,7 @@ export function TextInput({
           autoCapitalize={autoCapitalize}
           multiline={multiline}
           numberOfLines={numberOfLines}
+          textAlign="right"
         />
       </View>
       {error && <Text style={styles.errorText}>{error}</Text>}
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.sm,
     color: colors.textSecondary,
     marginBottom: spacing.xs,
+    textAlign: 'right',
   },
   inputWrapper: {
     flexDirection: 'row',
@@ -69,7 +71,7 @@ const styles = StyleSheet.create({
     borderColor: colors.error[400],
   },
   icon: {
-    marginInlineEnd: spacing.sm,
+    marginEnd: spacing.sm,
   },
   input: {
     flex: 1,
@@ -78,16 +80,21 @@ const styles = StyleSheet.create({
     color: colors.text,
     padding: 0,
     minHeight: 24,
+    textAlign: 'right',
+    writingDirection: 'rtl',
   },
   multilineInput: {
     minHeight: 80,
     textAlignVertical: 'top',
     paddingVertical: spacing.sm,
+    textAlign: 'right',
+    writingDirection: 'rtl',
   },
   errorText: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.xs,
     color: colors.error[500],
     marginTop: spacing.xs,
+    textAlign: 'right',
   },
 });

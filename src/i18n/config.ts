@@ -1,12 +1,17 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { getLocales } from 'expo-localization';
+import { I18nManager } from 'react-native';
 import { Storage } from '../services/storage';
 
 import he from '../translations/he.json';
 import ar from '../translations/ar.json';
 
 export type AppLanguage = 'he' | 'ar';
+
+// Force RTL immediately at the top level so iOS native runtime registers it before view hierarchy renders
+I18nManager.allowRTL(true);
+I18nManager.forceRTL(true);
 
 const locales = getLocales();
 const deviceLanguage = locales[0]?.languageCode;
@@ -36,11 +41,12 @@ export async function loadSavedLanguage(): Promise<AppLanguage> {
 export async function changeLanguage(lang: AppLanguage) {
   await i18n.changeLanguage(lang);
   await Storage.setLanguage(lang);
+  I18nManager.allowRTL(true);
+  I18nManager.forceRTL(true);
 }
 
 export function isRTL(lang?: string): boolean {
-  const currentLang = lang || i18n.language;
-  return currentLang === 'he' || currentLang === 'ar';
+  return true; // Both supported languages ('he' and 'ar') are RTL
 }
 
 export function getCurrentLanguage(): AppLanguage {

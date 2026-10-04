@@ -104,6 +104,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xl,
     color: colors.text,
+    textAlign: 'right',
   },
   selectedContainer: {
     paddingHorizontal: spacing.md,
@@ -117,12 +118,14 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.xs,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   selectedValue: {
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.md,
     color: colors.primary[700],
     marginTop: 2,
+    textAlign: 'right',
   },
   content: {
     flex: 1,
@@ -154,6 +157,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.medium,
     fontSize: fontSize.md,
     color: colors.text,
+    textAlign: 'right',
   },
   optionTextActive: {
     color: colors.primary[700],

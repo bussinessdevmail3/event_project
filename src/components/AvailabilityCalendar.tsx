@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Pressable, ScrollView } from 'react-native';
 import { useState, useMemo } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react-native';
 import { colors, fontFamily, fontSize, radius, spacing } from '../theme/tokens';
 import { useI18n } from '../services/i18n';
 import type { Availability } from '../types';
@@ -38,9 +39,15 @@ export function AvailabilityCalendar({ availability, selectedDate, onDateSelect,
   for (let i = 0; i < startDayOfWeek; i++) days.push(null);
   for (let d = 1; d <= daysInMonth; d++) days.push(d);
 
-  const dayLabels = language === 'he'
-    ? [t('calendar.sun'), t('calendar.mon'), t('calendar.tue'), t('calendar.wed'), t('calendar.thu'), t('calendar.fri'), t('calendar.sat')]
-    : [t('calendar.sat'), t('calendar.fri'), t('calendar.thu'), t('calendar.wed'), t('calendar.tue'), t('calendar.mon'), t('calendar.sun')];
+  const dayLabels = [
+    t('calendar.sun'),
+    t('calendar.mon'),
+    t('calendar.tue'),
+    t('calendar.wed'),
+    t('calendar.thu'),
+    t('calendar.fri'),
+    t('calendar.sat'),
+  ];
 
   const goPrevMonth = () => {
     const prev = new Date(year, month - 1, 1);
@@ -94,11 +101,11 @@ export function AvailabilityCalendar({ availability, selectedDate, onDateSelect,
     <View style={styles.container}>
       <View style={styles.header}>
         <Pressable onPress={goPrevMonth} hitSlop={8}>
-          <Text style={styles.navArrow}>{language === 'he' ? '›' : '‹'}</Text>
+          <ChevronRight size={24} color={colors.primary[500]} />
         </Pressable>
         <Text style={styles.monthName}>{monthName}</Text>
         <Pressable onPress={goNextMonth} hitSlop={8}>
-          <Text style={styles.navArrow}>{language === 'he' ? '‹' : '›'}</Text>
+          <ChevronLeft size={24} color={colors.primary[500]} />
         </Pressable>
       </View>
 

@@ -36,5 +36,6 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xxxl,
     color: colors.text,
+    textAlign: 'right',
   },
 });

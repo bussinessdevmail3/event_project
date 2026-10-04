@@ -374,6 +374,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.bold,
     fontSize: fontSize.xxxl,
     color: colors.text,
+    textAlign: 'right',
   },
   locationRow: {
     flexDirection: 'row',
@@ -385,6 +386,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.textSecondary,
+    textAlign: 'right',
   },
   ratingRow: {
     flexDirection: 'row',
@@ -435,12 +437,14 @@ const styles = StyleSheet.create({
     fontSize: fontSize.lg,
     color: colors.text,
     marginBottom: spacing.sm,
+    textAlign: 'right',
   },
   description: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.textSecondary,
     lineHeight: 24,
+    textAlign: 'right',
   },
   amenitiesGrid: {
     flexDirection: 'row',
@@ -460,6 +464,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.medium,
     fontSize: fontSize.sm,
     color: colors.text,
+    textAlign: 'right',
   },
   reviewItem: {
     paddingVertical: spacing.md,
@@ -491,6 +496,7 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.semibold,
     fontSize: fontSize.sm,
     color: colors.text,
+    textAlign: 'right',
   },
   reviewComment: {
     fontFamily: fontFamily.regular,
@@ -498,11 +504,13 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginTop: spacing.xs,
     lineHeight: 20,
+    textAlign: 'right',
   },
   noReviews: {
     fontFamily: fontFamily.regular,
     fontSize: fontSize.md,
     color: colors.textMuted,
+    textAlign: 'right',
   },
   bottomBar: {
     position: 'absolute',
